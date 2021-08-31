@@ -8,13 +8,14 @@
 # limitations under the License.
 
 
+
 import requests
 
-HOST='http://awf-travis.appspot.com'
+HOST='http://awf-travis-python.appspot.com'
 
 # [START e2e]
 response = requests.get(f"{HOST}/get_author/ulysses")
-assert(response.text == "James Joyce")
+assert(response.text == "Dermot Bolger")
 # [END e2e]
 
 
